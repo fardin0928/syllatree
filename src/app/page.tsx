@@ -1,7 +1,6 @@
 import Link from "next/link";
 import AuthButton from "@/components/AuthButton";
-import { LINKS, TOPICS, TOPIC_BY_ID, type Topic } from "@/data/roadmap";
-import { listProblems } from "@/lib/problems";
+import { LINKS, TOPICS, TOPIC_BY_ID, TOTAL_PROBLEMS, type Topic } from "@/data/roadmap";
 
 export const dynamic = "force-dynamic";
 
@@ -89,12 +88,11 @@ function GlowTree() {
 }
 
 export default async function Home() {
-  const inBrowser = (await listProblems()).length;
 
   const stats = [
     { n: TOPICS.length, label: "topics on the roadmap" },
     { n: TOPICS.reduce((n, t) => n + t.prereqs.length, 0), label: "concepts to learn" },
-    { n: inBrowser, label: "problems you can run here" },
+    { n: TOTAL_PROBLEMS, label: "practice problems on the roadmap" },
     { n: "C++17", label: "compiled and judged on the server" },
   ];
 
@@ -240,7 +238,7 @@ export default async function Home() {
           <div className="relative mx-auto max-w-3xl px-4 py-28 text-center sm:px-6">
             <h2 className="text-4xl font-normal tracking-[-0.04em] sm:text-5xl">Open the roadmap and pick a topic.</h2>
             <p className="mt-4 text-neutral-400">
-              {inBrowser} problems are ready to run. Nothing to install, and you can skip the account.
+              {TOTAL_PROBLEMS} practice problems are waiting. Nothing to install, and you can skip the account.
             </p>
             <div className="mt-8 flex justify-center gap-2">
               <Link href="/roadmap" className={PILL_LIGHT}>Open the roadmap</Link>
