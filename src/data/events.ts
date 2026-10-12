@@ -15,7 +15,7 @@ export type CourseEvent = {
 export const KIND_STYLE: Record<EventKind, { dot: string; text: string; chip: string }> = {
   Midterm: { dot: "bg-rose-400", text: "text-rose-300", chip: "bg-rose-500/10 border-rose-500/30" },
   Exam: { dot: "bg-rose-400", text: "text-rose-300", chip: "bg-rose-500/10 border-rose-500/30" },
-  Project: { dot: "bg-indigo-400", text: "text-indigo-300", chip: "bg-indigo-500/10 border-indigo-500/30" },
+  Project: { dot: "bg-white", text: "text-neutral-200", chip: "bg-white/5 border-white/20" },
   Homework: { dot: "bg-amber-400", text: "text-amber-300", chip: "bg-amber-500/10 border-amber-500/30" },
 };
 

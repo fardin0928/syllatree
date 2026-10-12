@@ -1,9 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import {
-  Background,
-  BackgroundVariant,
   Controls,
   ReactFlow,
   ReactFlowProvider,
@@ -47,7 +46,7 @@ const edges: Edge[] = LINKS.map(([source, target]) => ({
   target,
   type: "smoothstep",
   pathOptions: { borderRadius: 60 },
-  style: { stroke: "#8b8b8b", strokeWidth: 1.5 },
+  style: { stroke: "#525252", strokeWidth: 1.5 },
 }));
 
 function Canvas({ localSlugs, authSlot }: { localSlugs: Set<string>; authSlot?: React.ReactNode }) {
@@ -89,10 +88,12 @@ function Canvas({ localSlugs, authSlot }: { localSlugs: Set<string>; authSlot?: 
   const openTopic: Topic | null = openId ? TOPIC_BY_ID.get(openId) ?? null : null;
 
   return (
-    <div className="h-dvh w-full overflow-hidden bg-[#17181a]">
+    <div className="h-dvh w-full overflow-hidden bg-black">
       <header className="pointer-events-none absolute left-0 top-0 z-10 p-5">
         <div className="pointer-events-auto">
-          <h1 className="text-lg font-semibold tracking-tight text-white">chill335</h1>
+          <h1 className="text-lg font-semibold tracking-tight text-white">
+            <Link href="/" className="transition hover:text-neutral-300">chill335</Link>
+          </h1>
           <p className="text-xs text-neutral-400">Drag to pan &middot; scroll to zoom &middot; click a topic</p>
         </div>
       </header>
@@ -118,7 +119,6 @@ function Canvas({ localSlugs, authSlot }: { localSlugs: Set<string>; authSlot?: 
         elementsSelectable
         proOptions={{ hideAttribution: true }}
       >
-        <Background variant={BackgroundVariant.Dots} gap={26} size={2.2} color="#8b929c" bgColor="#17181a" />
         <Controls showInteractive={false} className="!bottom-6 !left-6" />
       </ReactFlow>
 

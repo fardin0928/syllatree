@@ -8,7 +8,7 @@ export default function SiteNav({ right }: { right?: React.ReactNode }) {
         <Link href="/" className="font-semibold tracking-tight text-white">
           chill335
         </Link>
-        <Link href="/" className="text-neutral-400 transition hover:text-white">
+        <Link href="/roadmap" className="text-neutral-400 transition hover:text-white">
           Roadmap
         </Link>
         <Link href="/problems" className="text-neutral-400 transition hover:text-white">

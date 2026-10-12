@@ -27,7 +27,7 @@ export default async function AuthButton({
   const session = authConfigured ? await auth() : null;
   const user = session?.user;
 
-  const btn = `flex items-center justify-center gap-2 rounded-lg border border-neutral-700 bg-[#1f1f1f]/95 font-medium text-neutral-100 backdrop-blur transition hover:border-neutral-500 hover:text-white disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:border-neutral-700 ${
+  const btn = `flex items-center justify-center gap-2 rounded-lg border border-neutral-700 bg-[#0a0a0a]/95 font-medium text-neutral-100 backdrop-blur transition hover:border-neutral-500 hover:text-white disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:border-neutral-700 ${
     block ? "w-full px-4 py-2 text-sm" : "px-3 py-1.5 text-xs"
   }`;
 
@@ -54,12 +54,12 @@ export default async function AuthButton({
 
   return (
     <div
-      className={`flex items-center gap-2 rounded-lg border border-neutral-800 bg-[#1f1f1f]/95 py-1 pl-1 pr-2 backdrop-blur ${block ? "w-full" : ""}`}
+      className={`flex items-center gap-2 rounded-lg border border-neutral-800 bg-[#0a0a0a]/95 py-1 pl-1 pr-2 backdrop-blur ${block ? "w-full" : ""}`}
     >
       {user.image ? (
         <Image src={user.image} alt="" width={24} height={24} className="h-6 w-6 rounded-full" referrerPolicy="no-referrer" />
       ) : (
-        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">
+        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-semibold text-black">
           {(user.name ?? user.email ?? "?").slice(0, 1).toUpperCase()}
         </span>
       )}

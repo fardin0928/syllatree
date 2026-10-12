@@ -39,11 +39,11 @@ export default function UpcomingPanel() {
   const rest = upcoming.slice(1);
 
   return (
-    <section className="rounded-2xl border border-neutral-800 bg-[#1f1f1f]/95 p-5 backdrop-blur">
+    <section className="rounded-2xl border border-neutral-800 bg-[#0a0a0a]/95 p-5 backdrop-blur">
       <h2 className="text-sm font-semibold tracking-wide text-white">Upcoming</h2>
 
       {next ? (
-        <div className="mt-4 rounded-xl border border-neutral-800 bg-[#171717] p-4">
+        <div className="mt-4 rounded-xl border border-neutral-900 bg-black p-4">
           <div className="flex items-center gap-2">
             <span className={`h-2 w-2 rounded-full ${KIND_STYLE[next.kind].dot}`} />
             <span className={`text-[11px] font-semibold uppercase tracking-wide ${KIND_STYLE[next.kind].text}`}>
@@ -70,7 +70,7 @@ export default function UpcomingPanel() {
           {rest.map((e) => (
             <li
               key={e.id}
-              className="flex items-center justify-between gap-3 rounded-lg border border-neutral-800 bg-[#171717] px-3 py-2.5"
+              className="flex items-center justify-between gap-3 rounded-lg border border-neutral-900 bg-black px-3 py-2.5"
             >
               <div className="min-w-0">
                 <div className="flex items-center gap-2">

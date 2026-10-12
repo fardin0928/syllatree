@@ -69,7 +69,7 @@ export default function TopicSidebar({
         className={`fixed inset-0 z-20 bg-black/50 transition-opacity ${open ? "opacity-100" : "pointer-events-none opacity-0"}`}
       />
       <aside
-        className={`fixed right-0 top-0 z-30 flex h-full w-full max-w-[860px] flex-col overflow-y-auto border-l border-neutral-800 bg-[#141414] transition-transform duration-300
+        className={`fixed right-0 top-0 z-30 flex h-full w-full max-w-[860px] flex-col overflow-y-auto border-l border-neutral-800 bg-[#0a0a0a] transition-transform duration-300
           ${open ? "translate-x-0" : "translate-x-full"}`}
       >
         {topic && (
@@ -97,7 +97,7 @@ export default function TopicSidebar({
                 return (
                   <div
                     key={pre.title}
-                    className="rounded-lg border border-neutral-800 bg-[#1c1c1c] px-3 py-2.5"
+                    className="rounded-lg border border-neutral-800 bg-black px-3 py-2.5"
                   >
                     <div className="flex items-start justify-between gap-2">
                       <div className="text-sm font-semibold leading-snug text-white">{pre.title}</div>
@@ -108,7 +108,7 @@ export default function TopicSidebar({
                           ${prereqs.has(id) ? "border-emerald-400 bg-emerald-400" : "border-neutral-600 hover:border-neutral-400"}`}
                       />
                     </div>
-                    <div className="mt-1 text-xs text-indigo-300">{pre.course}</div>
+                    <div className="mt-1 text-xs text-neutral-500">{pre.course}</div>
                   </div>
                 );
               })}
@@ -144,7 +144,7 @@ export default function TopicSidebar({
                           {localSlugs?.has(p.slug) ? (
                             <Link
                               href={`/problems/${p.slug}`}
-                              className={`inline-flex items-center gap-2 font-medium transition hover:text-indigo-400 ${isDone ? "text-neutral-400 line-through" : "text-white"}`}
+                              className={`inline-flex items-center gap-2 font-medium transition hover:text-neutral-300 ${isDone ? "text-neutral-400 line-through" : "text-white"}`}
                             >
                               {p.title}
                               <span className="rounded bg-emerald-400/10 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-400">
@@ -156,7 +156,7 @@ export default function TopicSidebar({
                               href={`https://leetcode.com/problems/${p.slug}/`}
                               target="_blank"
                               rel="noreferrer"
-                              className={`inline-flex items-center gap-2 font-medium transition hover:text-indigo-400 ${isDone ? "text-neutral-400 line-through" : "text-white"}`}
+                              className={`inline-flex items-center gap-2 font-medium transition hover:text-neutral-300 ${isDone ? "text-neutral-400 line-through" : "text-white"}`}
                             >
                               {p.title}
                               <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 text-neutral-400" fill="none" stroke="currentColor" strokeWidth="2">

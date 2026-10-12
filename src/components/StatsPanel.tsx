@@ -52,7 +52,7 @@ export default function StatsPanel({ authSlot }: { authSlot?: React.ReactNode })
   }, [stats]);
 
   return (
-    <section className="rounded-2xl border border-neutral-800 bg-[#1f1f1f]/95 p-5 backdrop-blur">
+    <section className="rounded-2xl border border-neutral-800 bg-[#0a0a0a]/95 p-5 backdrop-blur">
       <div className="mb-5 flex flex-col gap-2 border-b border-neutral-800 pb-5">
         {authSlot}
         <Link
