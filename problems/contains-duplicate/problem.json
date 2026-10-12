@@ -1,0 +1,16 @@
+{
+  "title": "Contains Duplicate",
+  "difficulty": "Easy",
+  "topic": "arrays",
+  "tags": [
+    "array",
+    "hash-set",
+    "sorting"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n\nLine 2: n integers (nums)",
+  "order": 0,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

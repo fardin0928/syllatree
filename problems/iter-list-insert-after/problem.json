@@ -1,0 +1,22 @@
+{
+  "title": "Insert After Every Match (std::list)",
+  "difficulty": "Easy",
+  "topic": "stl",
+  "tags": [
+    "list",
+    "iterators",
+    "insert",
+    "bidirectional-iterator"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n target value\nLine 2: n integers",
+  "extraFlags": [
+    "-fsanitize=address",
+    "-fno-omit-frame-pointer",
+    "-g"
+  ],
+  "order": 11,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

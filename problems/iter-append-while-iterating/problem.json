@@ -1,0 +1,23 @@
+{
+  "title": "Append While Iterating",
+  "difficulty": "Medium",
+  "topic": "stl",
+  "tags": [
+    "vector",
+    "iterators",
+    "push_back",
+    "iterator-invalidation",
+    "capacity"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n\nLine 2: n integers",
+  "extraFlags": [
+    "-fsanitize=address",
+    "-fno-omit-frame-pointer",
+    "-g"
+  ],
+  "order": 12,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

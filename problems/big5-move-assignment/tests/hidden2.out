@@ -1,0 +1,11 @@
+b after b = move(a): [5]
+stole storage (no new array): yes
+moved-from is empty: yes
+sizes: 0 1
+b after self-move: [5]
+c after c = move(b): [5]
+returns *this: yes
+array allocations so far: 2
+noexcept: yes
+assigned from empty, size: 0
+leaked blocks: 0

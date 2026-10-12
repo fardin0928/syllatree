@@ -1,0 +1,11 @@
+a: [5]
+b before: [1, 2, 3, 4, 5, 6]
+a after b = a: [5]
+b after b = a: [105]
+sizes: 1 1
+separate storage: yes
+a after a = a: [5]
+c after c = b = a: [5]
+returns *this: yes
+assigned empty, size: 0
+leaked blocks: 0

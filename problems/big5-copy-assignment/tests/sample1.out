@@ -1,0 +1,11 @@
+a: [1, 2, 3]
+b before: [9, 9]
+a after b = a: [1, 2, 3]
+b after b = a: [101, 2, 3]
+sizes: 3 3
+separate storage: yes
+a after a = a: [1, 2, 3]
+c after c = b = a: [1, 2, 3]
+returns *this: yes
+assigned empty, size: 0
+leaked blocks: 0

@@ -1,0 +1,17 @@
+{
+  "title": "Big Five 3: Copy Assignment",
+  "difficulty": "Medium",
+  "topic": "stl",
+  "tags": [
+    "big-five",
+    "copy-assignment",
+    "self-assignment"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n\nLine 2: n integers\nLine 3: m\nLine 4: m integers",
+  "extraFlags": [],
+  "order": 22,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

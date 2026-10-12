@@ -1,0 +1,6 @@
+a: [5]
+leaked blocks after scope: 0
+array freed with delete[]: yes
+leaked blocks after 50 temporaries: 0
+empty sizes: 0 0
+leaked blocks after empty buffers: 0

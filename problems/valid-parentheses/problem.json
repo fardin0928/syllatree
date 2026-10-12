@@ -1,0 +1,15 @@
+{
+  "title": "Valid Parentheses",
+  "difficulty": "Easy",
+  "topic": "stl",
+  "tags": [
+    "string",
+    "stack"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: the string s (no spaces). An empty line means s = \"\".",
+  "order": 2,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

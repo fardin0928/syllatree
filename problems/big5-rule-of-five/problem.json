@@ -1,0 +1,17 @@
+{
+  "title": "Big Five: Rule of Five (all together)",
+  "difficulty": "Hard",
+  "topic": "stl",
+  "tags": [
+    "big-five",
+    "rule-of-five",
+    "raw-pointer"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n\nLine 2: n integers\nLine 3: m\nLine 4: m integers",
+  "extraFlags": [],
+  "order": 25,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

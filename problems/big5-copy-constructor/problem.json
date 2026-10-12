@@ -1,0 +1,17 @@
+{
+  "title": "Big Five 2: Copy Constructor",
+  "difficulty": "Easy",
+  "topic": "stl",
+  "tags": [
+    "big-five",
+    "copy-constructor",
+    "deep-copy"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n\nLine 2: n integers",
+  "extraFlags": [],
+  "order": 21,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

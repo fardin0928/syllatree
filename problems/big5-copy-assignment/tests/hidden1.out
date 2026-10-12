@@ -1,0 +1,11 @@
+a: []
+b before: []
+a after b = a: []
+b after b = a: []
+sizes: 0 0
+separate storage: yes
+a after a = a: []
+c after c = b = a: []
+returns *this: yes
+assigned empty, size: 0
+leaked blocks: 0

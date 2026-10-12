@@ -1,0 +1,18 @@
+a: []
+c (copy of a, then c[0] += 100): []
+copy has separate storage: yes
+b after b = a: []
+a after a = a: []
+move ctor stole storage: yes
+moved-from a is empty: yes
+move assign stole storage: yes
+moved-from d is empty: yes
+b after self-move: []
+sq: []
+b after swap: []
+sq after swap: []
+vector: 11 buffers, last has size 0
+noexcept moves: yes
+array allocations: 10
+leaked blocks: 0
+array frees match allocations: yes

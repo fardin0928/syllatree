@@ -1,0 +1,17 @@
+{
+  "title": "Big Five 4: Move Constructor",
+  "difficulty": "Medium",
+  "topic": "stl",
+  "tags": [
+    "big-five",
+    "move-semantics",
+    "noexcept"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n\nLine 2: n integers",
+  "extraFlags": [],
+  "order": 23,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

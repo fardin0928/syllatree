@@ -1,0 +1,15 @@
+{
+  "title": "Two Sum",
+  "difficulty": "Easy",
+  "topic": "arrays",
+  "tags": [
+    "array",
+    "hash-map"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n target\nLine 2: n integers (nums)",
+  "order": 1,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

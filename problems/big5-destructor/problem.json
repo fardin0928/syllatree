@@ -1,0 +1,18 @@
+{
+  "title": "Big Five 1: Destructor",
+  "difficulty": "Easy",
+  "topic": "stl",
+  "tags": [
+    "big-five",
+    "destructor",
+    "raw-pointer",
+    "delete[]"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n\nLine 2: n integers",
+  "extraFlags": [],
+  "order": 20,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}

@@ -1,0 +1,8 @@
+b: [1, 2, 3]
+stole storage (no new array): yes
+moved-from is empty: yes
+array allocations so far: 1
+move from empty, size: 0
+noexcept: yes
+vector kept sizes: yes
+leaked blocks: 0

@@ -1,0 +1,7 @@
+a: [-7, 0, 42, 3, -1]
+b: [93, 0, 42, 3, -1]
+c: [-7, 0, 42, 3, -101]
+sizes: 5 5 5
+separate storage: yes
+copy of empty has size: 0
+leaked blocks: 0

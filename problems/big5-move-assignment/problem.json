@@ -1,0 +1,17 @@
+{
+  "title": "Big Five 5: Move Assignment",
+  "difficulty": "Medium",
+  "topic": "stl",
+  "tags": [
+    "big-five",
+    "move-semantics",
+    "self-move"
+  ],
+  "timeLimitMs": 2000,
+  "inputFormat": "Line 1: n\nLine 2: n integers\nLine 3: m\nLine 4: m integers",
+  "extraFlags": [],
+  "order": 24,
+  "published": true,
+  "publishAt": null,
+  "solutionPublished": false
+}
