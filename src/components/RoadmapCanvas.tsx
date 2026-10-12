@@ -15,6 +15,7 @@ import "@xyflow/react/dist/style.css";
 
 import { LINKS, TOPICS, TOPIC_BY_ID, type Topic } from "@/data/roadmap";
 import { useProgress } from "@/lib/progress";
+import TreeMark, { SMALL_GLOW } from "./TreeMark";
 import TopicNode, { type TopicNodeType } from "./TopicNode";
 import TopicSidebar from "./TopicSidebar";
 import StatsPanel from "./StatsPanel";
@@ -92,7 +93,10 @@ function Canvas({ localSlugs, authSlot }: { localSlugs: Set<string>; authSlot?: 
       <header className="pointer-events-none absolute left-0 top-0 z-10 p-5">
         <div className="pointer-events-auto">
           <h1 className="text-lg font-semibold tracking-tight text-white">
-            <Link href="/" className="transition hover:text-neutral-300">chill335</Link>
+            <Link href="/" className="flex items-center gap-2 transition hover:text-neutral-300">
+              <TreeMark className={`h-5 w-auto ${SMALL_GLOW}`} />
+              chill335
+            </Link>
           </h1>
           <p className="text-xs text-neutral-400">Drag to pan &middot; scroll to zoom &middot; click a topic</p>
         </div>

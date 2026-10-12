@@ -1,5 +1,6 @@
 import Link from "next/link";
 import AuthButton from "@/components/AuthButton";
+import TreeMark, { SMALL_GLOW } from "@/components/TreeMark";
 import { LINKS, TOPICS, TOPIC_BY_ID, TOTAL_PROBLEMS, type Topic } from "@/data/roadmap";
 
 export const dynamic = "force-dynamic";
@@ -58,37 +59,17 @@ function CodeLine({ text }: { text: string }) {
   );
 }
 
-/** A small tree drawn in black, lit from behind - the roadmap's mark. */
+/** The mark at hero size, lit from behind. */
 function GlowTree() {
   return (
     <div className="relative flex h-[320px] items-center justify-center" aria-hidden="true">
       <div className="absolute h-[420px] w-[420px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.16)_0%,rgba(255,255,255,0.05)_35%,transparent_68%)]" />
-      <svg
-        viewBox="0 0 160 140"
-        className="relative w-[170px] [filter:drop-shadow(0_0_2px_rgba(255,255,255,0.95))_drop-shadow(0_0_18px_rgba(255,255,255,0.55))_drop-shadow(0_0_44px_rgba(255,255,255,0.25))]"
-      >
-        <g stroke="black" strokeWidth="7" strokeLinecap="round">
-          <line x1="80" y1="22" x2="36" y2="82" />
-          <line x1="80" y1="22" x2="124" y2="82" />
-          <line x1="36" y1="82" x2="20" y2="122" />
-          <line x1="36" y1="82" x2="56" y2="122" />
-          <line x1="124" y1="82" x2="140" y2="122" />
-        </g>
-        <g fill="black">
-          <circle cx="80" cy="22" r="17" />
-          <circle cx="36" cy="82" r="14" />
-          <circle cx="124" cy="82" r="14" />
-          <circle cx="20" cy="122" r="11" />
-          <circle cx="56" cy="122" r="11" />
-          <circle cx="140" cy="122" r="11" />
-        </g>
-      </svg>
+      <TreeMark className="relative w-[170px] [filter:drop-shadow(0_0_2px_rgba(255,255,255,0.95))_drop-shadow(0_0_18px_rgba(255,255,255,0.55))_drop-shadow(0_0_44px_rgba(255,255,255,0.25))]" />
     </div>
   );
 }
 
-export default async function Home() {
-
+export default function Home() {
   const stats = [
     { n: TOPICS.length, label: "topics on the roadmap" },
     { n: TOPICS.reduce((n, t) => n + t.prereqs.length, 0), label: "concepts to learn" },
@@ -100,7 +81,8 @@ export default async function Home() {
     <div className="flex min-h-dvh flex-col bg-black text-white">
       <header className="sticky top-0 z-20 bg-black/80 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-6xl items-center gap-8 px-4 sm:px-6">
-          <Link href="/" className="font-semibold tracking-tight">
+          <Link href="/" className="flex items-center gap-2.5 font-semibold tracking-tight">
+            <TreeMark className={`h-5 w-auto ${SMALL_GLOW}`} />
             chill335
           </Link>
           <nav aria-label="Primary" className="hidden gap-6 text-sm text-neutral-400 sm:flex">
@@ -250,7 +232,10 @@ export default async function Home() {
 
       <footer className="border-t border-neutral-900">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-6 text-sm text-neutral-500 sm:px-6">
-          <span className="font-semibold text-white">chill335</span>
+          <span className="flex items-center gap-2 font-semibold text-white">
+            <TreeMark className={`h-4 w-auto ${SMALL_GLOW}`} />
+            chill335
+          </span>
           <p>Built by a CS student, in the open.</p>
           <ul className="ml-auto flex gap-5">
             <li><Link href="/roadmap" className="transition hover:text-white">Roadmap</Link></li>
